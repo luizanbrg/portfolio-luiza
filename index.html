@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le p'tit portfolio de Luiza</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Luiza Nobrega</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Luiza Nobrega</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section-pic-container">
+        <img
+          src="./assets/profile-pic-luiza.JPG"
+          alt="Luiza's profile picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Salut, je suis</p>
+        <h1 class="title">Luiza Nobrega</h1>
+        <p class="section-text-p2">Développeuse Fullstack</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/CV-Luiza-Nobrega.pdf')">
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="window.open('https://linkedin.com/in/luiza-nobrega-felix', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="window.open('https://github.com/luizanbrg', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Et si on faisait connaissance?</p>
+      <h1 class="title">Qui suis-je?</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img src="./assets/profile-pic-2.jpeg" alt="Profile Picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience Icon" class="icon" />
+              <h3>Je cherche un contrat d'alternance</h3>
+              <p>À partir de <br />Janvier 2025</p>
+            </div>
+
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education Icon" class="icon" />
+              <h3>Rythme</h3>
+              <p>3 jours en entreprise <br />2 jours en formation</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Enthousiaste du Cloud, j’ai décidé d’intégrer l’école Epitech afin de préparer un
+              Master’s of Sciences Pro spécialisé Cloud. Je recherche une alternance de 32 mois,
+              afin de développer mes compétences dans une entreprise passionnée par la technologie.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section-text-p1">Découvrez</p>
+      <h1 class="title">mes compétences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-subtitle">Langages</h2>
+
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Avancé</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-subtitle">Technologies et frameworks</h2>
+
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>Spring Boot</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>Express.js</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>Ruby on Rails</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section-text-p1">Regardez mes</p>
+      <h1 class="title">Projets récents</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/loginpage.png" alt="Project one" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Login page Java/Angular</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/luizanbrg/login-auth-api', '_blank')"
+              >
+                Back-end
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/luizanbrg/login-page', '_blank')"
+              >
+                Front-end
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/tictactoe.png" alt="Project two" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">TicTacToe Java</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/luizanbrg/tictactoe', '_blank')"
+              >
+                GitHub Repo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section-text-p1">Contactez moi</p>
+      <h1 class="title">Mes cordonnées</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:luiza.nobrega@epitech.eu">luiza.nobrega@epitech.eu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="Linkedin  icon" class="icon contact-icon" />
+          <p>
+            <a href="https://www.linkedin.com/in/luiza-nobrega-felix/" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projetcs">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Luiza Nobrega. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
